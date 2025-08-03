@@ -1,0 +1,23 @@
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 30px;
+    color: black;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#nike {
+   width: 200px;
+   height: 200px;
+}
+
+#error {
+    color: red;
+}
