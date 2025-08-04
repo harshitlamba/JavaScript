@@ -1,0 +1,22 @@
+body {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+button {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
