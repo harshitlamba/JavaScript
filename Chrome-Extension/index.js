@@ -9,11 +9,20 @@ inputEl.addEventListener("input", function() {
 })
 
 inputBtn.addEventListener("click", function() {
-    savedJobs.push(inputEl.value);
+    if (inputEl.value != null && inputEl.value != "") {
+        savedJobs.push(inputEl.value);
+        inputEl.value = null;
+    }
+    renderJobs();
+})
+
+function renderJobs() {
     ulEl.textContent = null;
     for (i = 0; i < savedJobs.length; i++) {
-        ulEl.innerHTML += "<li>" + savedJobs[i] + "</li>";
+        const newListEle = document.createElement("li")
+        newListEle.textContent = savedJobs[i];
+        ulEl.append(newListEle);
     }
-})
+}
 
 
